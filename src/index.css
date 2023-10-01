@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/static/Raleway-Thin.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-SemiBold.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-Regular.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-Medium.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-Light.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-ExtraLight.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-Bold.ttf") format("truetype");
+  src: url("./fonts/static/Raleway-Black.ttf") format("truetype");
+}
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
