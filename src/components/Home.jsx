@@ -17,7 +17,7 @@ const Home = () => {
           web applications.
         </p>
         <div>
-          <button>
+          <button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
             View Projects
             <HiArrowNarrowRight />
           </button>
