@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <navbar className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <section>
-        <p className="hover:text-[#7140bf] duration-100 cursor-pointer">
+        <p className="hover:text-pink-600 duration-100 cursor-pointer">
           M.L - RoadToJunior
         </p>
       </section>
