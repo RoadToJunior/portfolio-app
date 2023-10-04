@@ -8,38 +8,56 @@ import Javascript from "../assets/javascript.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
-      <div>
-        <p>Skills</p>
-        <p>// These are the technologies I've worked with</p>
+    <section
+      name="skills"
+      className="w-full h-screen bg-[#0a192f] text-gray-300"
+    >
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+        <div>
+          <p className="text-4xl font-bold inline border-b-4 border-pink-600">
+            Skills
+          </p>
+          <p className="py-4">// These are the technologies I've worked with</p>
+        </div>
+
+        {/* container for all icons */}
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={HTML} alt="HTML logo" />
+            <p className="my-4">HTML</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Tailwind} alt="Tailwind logo" />
+            <p className="my-4">Tailwind</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 py-5 mx-auto" src={Sass} alt="Sass logo" />
+            <p className="my-4">Sass</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Github} alt="GitHub logo" />
+            <p className="my-4">GitHub</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={ReactLogo} alt="React.js logo" />
+            <p className="my-4">React</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              className="w-20 mx-auto"
+              src={Javascript}
+              alt="Javascript logo"
+            />
+            <p className="my-4">Javascript</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <div>
-          <img className="w-20" src={HTML} alt="HTML logo" />
-          <p>HTML</p>
-        </div>
-        <div>
-          <img className="w-20" src={Tailwind} alt="HTML logo" />
-          <p>Tailwind</p>
-        </div>
-        <div>
-          <img className="w-20" src={Sass} alt="HTML logo" />
-          <p>Sass</p>
-        </div>
-        <div>
-          <img className="w-20" src={Github} alt="HTML logo" />
-          <p>Github</p>
-        </div>
-        <div>
-          <img className="w-20" src={ReactLogo} alt="HTML logo" />
-          <p>React</p>
-        </div>
-        <div>
-          <img className="w-20" src={Javascript} alt="HTML logo" />
-          <p>Javascript</p>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
