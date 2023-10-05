@@ -14,7 +14,7 @@ const Home = () => {
           I'm a{" "}
           <span>
             <ReactTypingEffect
-              text={["Frontend Developer.", "Webdev Goat."]}
+              text={["Frontend Developer."]}
               eraseSpeed={50}
               speed={120}
               className="text-pink-600"
