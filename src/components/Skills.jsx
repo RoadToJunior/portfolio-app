@@ -44,9 +44,9 @@ const Skills = () => {
             </a>
           </div>
 
-          <div className="shadow-2xl shadow-[#040c16] hover:scale-110 duration-500 rounded-3xl">
+          <div className="shadow-2xl shadow-[#040c16]  hover:scale-110 duration-500 rounded-3xl">
             <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
-              <img className="w-20 py-5 mx-auto" src={Sass} alt="Sass logo" />
+              <img className="w-20 py-2 mx-auto" src={Sass} alt="Sass logo" />
               <p className="my-4">Sass</p>
             </a>
           </div>
