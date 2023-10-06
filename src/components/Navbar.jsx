@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, SetNav] = useState(false);
@@ -17,7 +10,7 @@ const Navbar = () => {
     <navbar className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <section>
         <p className="hover:text-pink-600 duration-100 cursor-pointer">
-          M.L - RoadToJunior
+          Marcin.
         </p>
       </section>
 
@@ -58,10 +51,10 @@ const Navbar = () => {
               href="/"
               className="flex justify-between items-center w-full text-gray-300"
             >
-              Linkedin <FaLinkedin size={30} />
+              LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-lime-600">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-pink-600">
             <a
               href="/"
               className="flex justify-between items-center w-full text-gray-300"
@@ -74,7 +67,7 @@ const Navbar = () => {
               href="https://github.com/RoadToJunior"
               className="flex justify-between items-center w-full text-gray-300"
             >
-              Github <FaGithub size={30} />
+              GitHub <FaGithub size={30} />
             </a>
           </li>
         </ul>
