@@ -6,7 +6,23 @@ const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-[#0a192f]">
       <section className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-pink-600">Hello World, my name is</p>
+        <p className="text-pink-600">
+          <ReactTypingEffect
+            text={[
+              "Cześć",
+              "Hi",
+              "Bonjour",
+              "Ahoj",
+              "Hola",
+              "Guten Tag",
+              "Konnichiwa",
+            ]}
+            eraseSpeed={50}
+            speed={120}
+            className="text-pink-600"
+          />
+          , my name is
+        </p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Marcin Lichota
         </h1>
@@ -22,8 +38,7 @@ const Home = () => {
           </span>
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I'm a frontend developer. Currently, I'm focused on builidng resposive
-          web applications.
+          Currently, I'm focused on builidng resposive web applications.
         </p>
         <div>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
