@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, SetNav] = useState(false);
@@ -17,12 +18,29 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
+        <li>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
         <li>
           <a href="https://github.com/RoadToJunior">GitHub</a>
         </li>
-        <li>Contact</li>
+        <li>
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
       {/* hamburger */}
       <section onClick={handleClick} className="md:hidden z-10">
