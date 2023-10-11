@@ -16,13 +16,13 @@ const Projects = () => {
           <p className="py-6">// Check out some of my recent projects</p>
         </div>
 
-        <div
-          style={{
-            backgroundImage: `url(${ProjectImg})`,
-          }}
-          className="content-div grid sm:grid-cols-2 md:grid-cols-3 gap-4"
-        >
-          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div
+            style={{
+              backgroundImage: `url(${ProjectImg})`,
+            }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
             {/* hover effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
