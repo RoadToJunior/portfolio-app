@@ -9,33 +9,25 @@ const Home = () => {
         <p className="text-pink-600">
           <ReactTypingEffect
             text={[
-              "Cześć",
-              "Hi",
-              "Bonjour",
-              "Ahoj",
-              "Hola",
-              "Guten Tag",
-              "Konnichiwa",
+              "Cześć!",
+              "Hi!",
+              "Bonjour!",
+              "Ahoy!",
+              "Hola!",
+              "Guten Tag!",
+              "Konnichiwa!",
             ]}
             eraseSpeed={50}
             speed={120}
             className="text-pink-600"
           />
-          , my name is
+           My name is
         </p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Marcin Lichota
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I'm a{" "}
-          <span>
-            <ReactTypingEffect
-              text={["Frontend Developer."]}
-              eraseSpeed={50}
-              speed={120}
-              className="text-pink-600"
-            />
-          </span>
+          I'm a <span  className="text-pink-600"> Frontend Developer.</span>
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           Currently, I'm focused on builidng resposive web applications.
