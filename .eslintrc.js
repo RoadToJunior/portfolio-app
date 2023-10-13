@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
   },
   extends: ["airbnb", "plugin:prettier/recommended"],
-  plugins: ["prettier"],
+  plugins: ["prettier", "react"],
   overrides: [
     {
       env: {
@@ -31,5 +31,12 @@ module.exports = {
       },
     ],
     "prettier/prettier": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        namedComponents: "arrow-function",
+      },
+    ],
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
   },
 };
