@@ -18,32 +18,38 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
+        <li className="hover:text-[#8892b0]">
+          <Link to="home" smooth duration={500}>
             Home
           </Link>
         </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
+        <li className="hover:text-[#8892b0]">
+          <Link to="about" smooth duration={500}>
             About
           </Link>
         </li>
-        <li>
-          <a href="https://github.com/RoadToJunior">GitHub</a>
-        </li>
-        <li>
-          <Link to="projects" smooth={true} duration={500}>
+        <li className="hover:text-[#8892b0]">
+          <Link to="projects" smooth duration={500}>
             Projects
           </Link>
         </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
+        <li className="hover:text-[#8892b0]">
+          <Link to="contact" smooth duration={500}>
             Contact
           </Link>
         </li>
+        <li className="hover:text-[#8892b0]">
+          <a href="https://github.com/RoadToJunior">GitHub</a>
+        </li>
       </ul>
       {/* hamburger */}
-      <section onClick={handleClick} className="md:hidden z-10">
+      <section
+        role="button"
+        tabIndex={0}
+        onClick={handleClick}
+        onKeyPress={handleClick}
+        className="md:hidden z-10"
+      >
         {!nav ? <FaBars /> : <FaTimes />}
       </section>
       {/* mobile menu */}
@@ -55,12 +61,12 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="home" smooth duration={500}>
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="about" smooth duration={500}>
             About
           </Link>
         </li>
@@ -68,17 +74,12 @@ const Navbar = () => {
           <a href="https://github.com/RoadToJunior">GitHub</a>
         </li>
         <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
-            to="projects"
-            smooth={true}
-            duration={500}
-          >
+          <Link onClick={handleClick} to="projects" smooth duration={500}>
             Projects
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="contact" smooth duration={500}>
             Contact
           </Link>
         </li>

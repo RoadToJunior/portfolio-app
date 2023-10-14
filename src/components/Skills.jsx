@@ -17,7 +17,9 @@ const Skills = () => {
           <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             skills( );
           </p>
-          <p className="py-4">// These are the technologies I've worked with</p>
+          <p className="py-4">
+            &#47;&#47;These are the technologies I&apos;ve worked with
+          </p>
         </div>
 
         {/* container for all icons */}
