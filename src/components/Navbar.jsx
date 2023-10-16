@@ -2,18 +2,11 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { navbarList } from "../data/data";
 
 const Navbar = () => {
   const [nav, SetNav] = useState(false);
   const handleClick = () => SetNav(!nav);
-
-  const navList = [
-    { text: "Home", to: "home" },
-    { text: "About", to: "about" },
-    { text: "Projects", to: "projects" },
-    { text: "Contact", to: "contact" },
-    { text: "GitHub", href: "https://github.com/RoadToJunior" },
-  ];
 
   return (
     <navbar className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -26,7 +19,7 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        {navList.map((item) => (
+        {navbarList.map((item) => (
           <li className="hover:text-[#8892b0]">
             {item.to ? (
               <Link to={item.to} smooth duration={500}>
@@ -56,29 +49,17 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <a href="https://github.com/RoadToJunior">GitHub</a>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="projects" smooth duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth duration={500}>
-            Contact
-          </Link>
-        </li>
+        {navList.map((item) => (
+          <li className="py-6 text-4xl">
+            {item.to ? (
+              <Link onClick={handleClick} to={item.to} smooth duration={500}>
+                {item.text}
+              </Link>
+            ) : (
+              <a href={item.href}>{item.text}</a>
+            )}
+          </li>
+        ))}
       </ul>
       {/* social icons */}
       <section className="hidden lg:flex fixed flex-col top-[35%] left-0">
