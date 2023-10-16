@@ -7,6 +7,14 @@ const Navbar = () => {
   const [nav, SetNav] = useState(false);
   const handleClick = () => SetNav(!nav);
 
+  const navList = [
+    { text: "Home", to: "home" },
+    { text: "About", to: "about" },
+    { text: "Projects", to: "projects" },
+    { text: "Contact", to: "contact" },
+    { text: "GitHub", href: "https://github.com/RoadToJunior" },
+  ];
+
   return (
     <navbar className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <section>
@@ -18,29 +26,17 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li className="hover:text-[#8892b0]">
-          <Link to="home" smooth duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="hover:text-[#8892b0]">
-          <Link to="about" smooth duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="hover:text-[#8892b0]">
-          <Link to="projects" smooth duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li className="hover:text-[#8892b0]">
-          <Link to="contact" smooth duration={500}>
-            Contact
-          </Link>
-        </li>
-        <li className="hover:text-[#8892b0]">
-          <a href="https://github.com/RoadToJunior">GitHub</a>
-        </li>
+        {navList.map((item) => (
+          <li className="hover:text-[#8892b0]">
+            {item.to ? (
+              <Link to={item.to} smooth duration={500}>
+                {item.text}
+              </Link>
+            ) : (
+              <a href={item.href}>{item.text}</a>
+            )}
+          </li>
+        ))}
       </ul>
       {/* hamburger */}
       <section
