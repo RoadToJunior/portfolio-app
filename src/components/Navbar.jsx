@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleClick = () => SetNav(!nav);
 
   return (
-    <navbar className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <navbar className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
       <section>
         <p className="hover:text-pink-600 duration-100 cursor-pointer">
           Marcin.
@@ -20,13 +20,17 @@ const Navbar = () => {
 
       <ul className="hidden md:flex">
         {navbarList.map((item) => (
-          <li className="hover:text-[#8892b0]">
+          <li
+            className={`${
+              item.name === "GitHub" ? "text-pink-600" : ""
+            } hover:text-[#8892b0]`}
+          >
             {item.to ? (
               <Link to={item.to} smooth duration={500}>
-                {item.text}
+                {item.name}
               </Link>
             ) : (
-              <a href={item.href}>{item.text}</a>
+              <a href={item.href}>{item.name}</a>
             )}
           </li>
         ))}
@@ -49,14 +53,14 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        {navList.map((item) => (
+        {navbarList.map((item) => (
           <li className="py-6 text-4xl">
             {item.to ? (
               <Link onClick={handleClick} to={item.to} smooth duration={500}>
-                {item.text}
+                {item.name}
               </Link>
             ) : (
-              <a href={item.href}>{item.text}</a>
+              <a href={item.href}>{item.name}</a>
             )}
           </li>
         ))}
