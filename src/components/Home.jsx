@@ -4,6 +4,7 @@ import ReactTypingEffect from "react-typing-effect";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import ScrollToTop from "react-scroll-to-top";
 import { BsArrowUp } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         top={500}
         component={<BsArrowUp />}
         style={{
-          background: "#0a192f",
+          background: "rgba(255,255,255,0)",
           boxShadow: "none",
         }}
         className="text-4xl p-0.5 text-[#ccd6f6]"
@@ -50,7 +51,9 @@ const Home = () => {
             type="button"
             className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600"
           >
-            View Projects
+            <Link to="projects" smooth duration={500}>
+              View Projects
+            </Link>
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3" />
             </span>
