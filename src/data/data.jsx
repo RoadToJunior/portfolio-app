@@ -31,11 +31,11 @@ export const data = [
 ];
 
 export const navbarList = [
-  { text: "Home", to: "home" },
-  { text: "About", to: "about" },
-  { text: "Projects", to: "projects" },
-  { text: "Contact", to: "contact" },
-  { text: "GitHub", href: "https://github.com/RoadToJunior" },
+  { name: "Home", to: "home" },
+  { name: "About", to: "about" },
+  { name: "Projects", to: "projects" },
+  { name: "Contact", to: "contact" },
+  { name: "GitHub", href: "https://github.com/RoadToJunior" },
 ];
 
 export const skillsList = [
