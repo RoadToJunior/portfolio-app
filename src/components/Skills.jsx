@@ -1,10 +1,5 @@
 import React from "react";
-import Tailwind from "../assets/tailwind.png";
-import HTML from "../assets/html.png";
-import Sass from "../assets/sass-1-logo-png-transparent.png";
-import Github from "../assets/github.png";
-import ReactLogo from "../assets/react.png";
-import Javascript from "../assets/javascript.png";
+import { skillsList } from "../data/data";
 
 const Skills = () => {
   return (
@@ -26,7 +21,7 @@ const Skills = () => {
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
           <div className="shadow-2xl shadow-[#040c16] hover:scale-110 duration-500 rounded-3xl">
             <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=pl"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=eng"
               target="_blank"
               rel="noreferrer"
             >
