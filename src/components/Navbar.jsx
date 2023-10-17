@@ -20,9 +20,11 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         {navbarList.map((item) => (
           <li
-            className={`${
-              item.name === "GitHub" ? "text-pink-600" : ""
-            } hover:text-[#8892b0]`}
+            className={
+              item.name === "GitHub"
+                ? "text-pink-600 hover:text-gray-300"
+                : "hover:text-[#8892b0]"
+            }
           >
             {item.to ? (
               <Link to={item.to} smooth duration={500}>
