@@ -1,3 +1,6 @@
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 import ProjectIMG from "../assets/workImg.jpeg";
 import Tailwind from "../assets/tailwind.png";
 import HTML from "../assets/html.png";
@@ -74,5 +77,26 @@ export const skillsList = [
     src: Javascript,
     alt: "JavaScript Logo",
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript?retiredLocale=pl",
+  },
+];
+
+export const socialIconsList = [
+  {
+    name: "LinkedIn",
+    href: "https://pl.linkedin.com/in/marcin-lichota-61ba85251",
+    icon: <FaLinkedin size={30} />,
+    bg: "bg-[#0b66c2]",
+  },
+  {
+    name: "Email",
+    href: "/",
+    icon: <HiOutlineMail size={30} />,
+    bg: "bg-pink-600",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/RoadToJunior",
+    icon: <FaGithub size={30} />,
+    bg: "bg-[#333333]",
   },
 ];
