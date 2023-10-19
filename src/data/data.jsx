@@ -92,6 +92,7 @@ export const socialIconsList = [
     href: "/",
     icon: <HiOutlineMail size={30} />,
     bg: "bg-pink-600",
+    to: "contact",
   },
   {
     name: "GitHub",
