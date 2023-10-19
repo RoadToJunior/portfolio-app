@@ -68,20 +68,35 @@ const Navbar = () => {
       </ul>
       {/* social icons */}
       <section className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          {socialIconsList.map((item) => (
-            <li
-              className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${item.bg}`}
-            >
-              <a
-                href={item.href}
+        {socialIconsList.map((item) => (
+          <ul>
+            {item.to ? (
+              <Link
                 className="flex justify-between items-center w-full text-gray-300"
+                to={item.to}
+                smooth
+                duration={500}
               >
-                {item.name} {item.icon}
-              </a>
-            </li>
-          ))}
-        </ul>
+                <li
+                  className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${item.bg}`}
+                >
+                  {item.name} {item.icon}
+                </li>
+              </Link>
+            ) : (
+              <li
+                className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${item.bg}`}
+              >
+                <a
+                  href={item.href}
+                  className="w-full h-full flex justify-between items-center w-full text-gray-300"
+                >
+                  {item.name} {item.icon}
+                </a>
+              </li>
+            )}
+          </ul>
+        ))}
       </section>
     </navbar>
   );
