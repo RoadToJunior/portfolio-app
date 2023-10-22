@@ -22,11 +22,13 @@ const About = () => {
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
-              quae nobis quos nostrum repellat quibusdam reiciendis ducimus,
-              natus placeat totam nihil dolore, praesentium illum repudiandae
-              recusandae dicta fugit perferendis ipsa omnis laboriosam enim eum
-              molestias?
+              Over the past several years, I've dedicated myself to coding,
+              investing countless hours into my craft. My GitHub profile is a
+              testimony to this dedication and the continuous progress I've
+              achieved. With daily coding practice, I've sharpened my skills and
+              expanded my knowledge in a wide range of programming languages and
+              frameworks. Join me on this journey of perpetual growth, and let's
+              collaborate to build remarkable digital solutions.
             </p>
           </div>
         </div>
