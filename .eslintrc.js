@@ -21,6 +21,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
+    "react/no-unescaped-entities": 0,
     "no-use-before-define": [
       "error",
       {
