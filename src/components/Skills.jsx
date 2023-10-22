@@ -22,7 +22,11 @@ const Skills = () => {
           {skillsList.map((item) => (
             <div className="shadow-2xl shadow-[#040c16] hover:scale-110 duration-500 rounded-3xl">
               <a href={item.href} target="_blank" rel="noreferrer">
-                <img className="w-20 mx-auto" src={item.src} alt={item.alt} />
+                <img
+                  className="w-20 h-20 mx-auto"
+                  src={item.src}
+                  alt={item.alt}
+                />
                 <p className="my-4">{item.name}</p>
               </a>
             </div>
