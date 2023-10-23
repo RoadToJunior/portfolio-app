@@ -1,6 +1,9 @@
 import React from "react";
 
 const Contact = () => {
+  const emailValidation = () => {
+    const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
+  };
   return (
     <section
       name="contact"
@@ -34,6 +37,7 @@ const Contact = () => {
           placeholder="Message"
         />
         <button
+          onSubmit={emailValidation}
           type="submit"
           className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-4 my-8 mx-auto flex items-center"
         >
