@@ -37,7 +37,7 @@
     to right,
     rgba(112, 157, 255, 0.8),
     hsla(242, 74%, 61%, 0.8)
-  ) !important;
+    )!important;
 }
 
 /* custom scrollbar */
@@ -51,4 +51,8 @@
 ::-webkit-scrollbar-thumb {
   background-color: #db2877;
   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b32361;
+
 }
